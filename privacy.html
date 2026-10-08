@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Privacy Policy · Hekip</title>
+<style>
+:root {
+  --canvas: #12171f; --card: #1c232d; --card-high: #253042; --ink: #f1f5f9; --muted: #94a3b8;
+  --hair: rgba(203, 213, 225, 0.14); --teal: #2dd4bf; --teal-deep: #00372f; --blush: #ffb4ab; --cobalt: #38bdf8;
+  --paper: #e4efed; --paper-ink: #1e293b;
+}
+@media (prefers-color-scheme: light) {
+  :root { --canvas: #cedfe2; --card: #e2edee; --card-high: #bfd5d9; --ink: #142028; --muted: #4a616b; --hair: rgba(20, 32, 40, 0.12); --teal: #0f9989; --paper: #eaf2f1; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--canvas); color: var(--ink);
+  font: 15px/1.65 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+  padding: max(20px, env(safe-area-inset-top)) 18px max(32px, env(safe-area-inset-bottom));
+}
+main { max-width: 680px; margin: 0 auto; }
+.stamp {
+  position: relative; margin: 4px 0 22px; padding: 9px;
+  background: radial-gradient(circle 5px at 8px 8px, transparent 95%, var(--paper) 100%) -8px -8px / 16px 16px;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.25));
+}
+.stamp-inner {
+  position: relative; overflow: hidden; background: var(--paper); color: var(--paper-ink);
+  padding: 22px 20px 20px; outline: 1.5px dashed rgba(30, 41, 59, 0.22); outline-offset: -9px;
+}
+.eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #0f9e8c; }
+h1 { font-size: 30px; line-height: 1.15; margin: 6px 0 8px; letter-spacing: -0.01em; padding-right: 84px; }
+.lede { margin: 0; color: #475569; font-size: 14px; padding-right: 64px; }
+.postmark {
+  position: absolute; right: 8px; top: 14px; width: 92px; height: 92px; border-radius: 50%;
+  border: 2px solid rgba(56, 120, 220, 0.55); display: grid; place-items: center; transform: rotate(-14deg);
+  color: rgba(56, 120, 220, 0.75); font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-align: center;
+}
+.postmark::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; border: 1px solid rgba(56, 120, 220, 0.4); }
+.meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.chip { font-size: 11px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: #cdebe6; color: #0b6b5f; }
+.chip.pink { background: #fbd9d4; color: #a33b30; }
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 22px; }
+.summary div { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 12px 10px; text-align: center; }
+.summary b { display: block; font-size: 13px; color: var(--teal); }
+.summary span { font-size: 11px; color: var(--muted); }
+nav { background: var(--card); border: 1px solid var(--hair); border-radius: 16px; padding: 14px 16px; margin-bottom: 22px; }
+nav p { margin: 0 0 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+nav ol { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 14px; }
+nav li { padding: 3px 0; break-inside: avoid; }
+nav a { color: var(--ink); text-decoration: none; font-size: 14px; }
+nav a span { color: var(--teal); font-weight: 800; margin-right: 6px; font-variant-numeric: tabular-nums; }
+section { background: var(--card); border: 1px solid var(--hair); border-radius: 16px; padding: 16px 18px; margin-bottom: 12px; scroll-margin-top: 16px; }
+h2 { display: flex; align-items: center; gap: 10px; font-size: 17px; margin: 0 0 6px; }
+h2 .no { flex: none; width: 28px; height: 28px; border-radius: 8px; background: var(--teal-deep); color: var(--teal); display: grid; place-items: center; font-size: 12px; font-weight: 800; }
+@media (prefers-color-scheme: light) { h2 .no { background: #d5f3ee; color: #0b6b5f; } }
+section p { margin: 0; color: var(--muted); }
+section p + p { margin-top: 8px; }
+section strong { color: var(--ink); font-weight: 700; }
+.note { border-left: 3px solid var(--blush); background: var(--card-high); border-radius: 10px; padding: 10px 12px; margin-top: 10px; font-size: 14px; color: var(--ink); }
+footer { text-align: center; margin-top: 26px; color: var(--muted); font-size: 12px; }
+footer .tape { display: inline-block; background: rgba(45, 212, 191, 0.18); color: var(--teal); padding: 4px 14px; transform: rotate(-2deg); font-weight: 800; letter-spacing: 0.14em; margin-bottom: 8px; }
+a { color: var(--teal); }
+</style>
+</head>
+<body>
+<main>
+  <header class="stamp">
+    <div class="stamp-inner">
+      <div class="postmark">HEKIP<br>2026</div>
+      <div class="eyebrow">Hekip · Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="lede">What Hekip uses, when it uses it, and why everything stays on your device.</p>
+      <div class="meta">
+        <span class="chip">Effective October 8, 2026</span>
+        <span class="chip pink">Operator: Hekip</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary">
+    <div><b>On device</b><span>No uploads</span></div>
+    <div><b>No account</b><span>No email or password</span></div>
+    <div><b>Not sold</b><span>Your data stays yours</span></div>
+  </div>
+
+  <nav>
+    <p>Contents</p>
+    <ol>
+      <li><a href="#photos"><span>01</span>Photos and camera</a></li>
+      <li><a href="#speech"><span>02</span>Microphone</a></li>
+      <li><a href="#purchases"><span>03</span>Purchases</a></li>
+      <li><a href="#account"><span>04</span>Account</a></li>
+      <li><a href="#tracking"><span>05</span>Tracking and alerts</a></li>
+      <li><a href="#contact"><span>06</span>Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="photos">
+    <h2><span class="no">01</span>Photos and camera</h2>
+    <p>When you tap <strong>Take Photo</strong>, Hekip uses the camera to capture a stamp picture. When you tap <strong>Choose Photo</strong>, Hekip reads a picture you select. When you tap <strong>Save Image</strong>, Hekip writes the finished scrapboard into your photo library.</p>
+    <p>Pictures are stored in the app’s private folder. Hekip does not upload them.</p>
+  </section>
+
+  <section id="speech">
+    <h2><span class="no">02</span>Microphone and speech</h2>
+    <p>When you tap <strong>Speak Text</strong>, Hekip uses the microphone and on-device speech recognition to fill the scrapboard text field. Nothing is written until you confirm the transcript.</p>
+    <div class="note">If you decline the microphone, you can still type your text.</div>
+  </section>
+
+  <section id="purchases">
+    <h2><span class="no">03</span>Purchases</h2>
+    <p>Board exports spend <strong>Notes</strong>, a consumable balance stored on this device. Purchases are processed by Apple. Hekip keeps a local ledger of verified transactions so the same purchase is not granted twice.</p>
+    <div class="note">Notes cannot be restored after the app is removed or its data is cleared.</div>
+  </section>
+
+  <section id="account">
+    <h2><span class="no">04</span>Account</h2>
+    <p><strong>Enter</strong> creates a session on this device only. There is no Apple ID login, email, or password.</p>
+    <p><strong>Log Out</strong> keeps stamps, pages, and Notes. <strong>Delete Account</strong> erases local stamps, scrapboards, exported files, demo history, and remaining Notes.</p>
+  </section>
+
+  <section id="tracking">
+    <h2><span class="no">05</span>Tracking and notifications</h2>
+    <p>After you enter the atelier, iOS may ask about tracking and notifications. Those are standard system alerts and you can change your choice in Settings at any time. Hekip does not sell personal information.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="no">06</span>Contact</h2>
+    <p>Questions about this policy can be sent through the Hekip page on the App Store. The operator is Hekip.</p>
+  </section>
+
+  <footer>
+    <div class="tape">HEKIP</div>
+    <div>Nocturne Photo Atelier · © 2026 Hekip</div>
+  </footer>
+</main>
+</body>
+</html>
